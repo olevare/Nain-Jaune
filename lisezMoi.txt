@@ -1,0 +1,52 @@
+------------------Nain Jaune-------------------
+
+Afin de compiler le nain jaune, dans le terminal,
+il faut se déplacer dans le dossier "sources" 
+contenant et les fichiers sources et le makefile.
+Ensuite, toujours depuis le terminal, il faut 
+éxécuter le makefile avec la commande "make -f makeFile"
+Ainsi, vous allez avoir les fichiers en .o
+ainsi que l'éxécutable nommé "nain".
+
+lors de l'éxécution du programme, le jeu va 
+tout d'abord vous demander combien de joueurs
+réels veulent jouer. vous entrez le nombre.
+ensuite, viens le tour des joueurs virtuels.
+Encore une fois, entrez le nombre.
+Par la suite, il vous est demandé de choisir
+le montant d'argent de départ. entre le numero
+de votre choix.
+et finalement, pour terminer la mise en place
+du jeu, il sera demandé à tous les joueurs un par un
+s'il est humain, ainsi que le pseudonyme que celui-ci
+souhaite porter tout au long du jeu.
+
+Ainsi :
+Chaque joueur reçoit au départ la somme qui a était convenu  
+lors du lancement du jeu puis des cartes sont distribués, et 
+les mises de départ sont prises. 
+
+le jeu commence. vous avez un emplacement avec 'carte acteulle'.
+si vous possédez la carte qui est juste un point supérieur à la 
+carte actuelle, alors, vous la jouez.
+
+si vous possédez une carte figurant sur le plateau, vous récuperez 
+la mise qui lui correspond. 
+
+vous gagnez si vous avez posé toutes vos cartes. à la fin de cette 
+manche, les joueurs perdants vous donne la somme de leur en carte 
+restante en argent.
+
+
+Comment manipulez le terminal pour jouer ?
+
+pour poser une carte, entrez l'indice de la carte indiqué dans 
+votre main apparu au bas de l'écran.
+
+pour prendre l'argent des mises, vous devez tout d'abord écrire 
+'prendre', et ensuite, vous écrivez l'indice de la carte correspondante.
+
+si vous ne pouvez pas jouer, ecrivez 'passe'.
+
+si jamais je vous manque, vous pouvez me faire apparaitre en 
+tapant lors de votre saisie de l'indice d'une carte le mot 'help'.

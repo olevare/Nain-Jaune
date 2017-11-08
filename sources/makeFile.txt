@@ -1,0 +1,16 @@
+nain: joueur.o carte.o affichage.o fonction.o regle.o deroulementJeu.o main.o
+	g++ -o nain joueur.o carte.o affichage.o fonction.o regle.o deroulementJeu.o main.o -o nain
+joueur.o: joueur.cpp
+	g++ -c joueur.cpp
+carte.o: carte.cpp
+	g++ -c carte.cpp
+affichage.o: affichage.cpp carte.h joueur.h
+	g++ -c affichage.cpp
+fonction.o: fonction.cpp carte.h
+	g++ -c fonction.cpp
+regle.o: regle.cpp fonction.h carte.h joueur.h affichage.h
+	g++ -c regle.cpp
+deroulementJeu.o: deroulementJeu.cpp fonction.h carte.h joueur.h regle.h affichage.h
+	g++ -c deroulementJeu.cpp
+main.o: main.cpp affichage.h carte.h deroulementJeu.h fonction.h joueur.h regle.h
+	g++ -c main.cpp
